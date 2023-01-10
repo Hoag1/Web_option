@@ -1,0 +1,245 @@
+/** @format */
+
+@import url(http://fonts.googleapis.com/css?family=Bangers);
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 150rem;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Bangers', cursive;
+    font-size: 1.8rem;
+    background: #171616;
+}
+
+section.top-page {
+    display: flex;
+    background-color: #171616;
+    height: 13rem;
+}
+
+/* navigation menu */
+
+nav.navigation {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    align-content: space-evenly;
+    margin-left: 40rem;
+    padding: 2rem;
+    animation: anime 2s alternate;
+}
+
+@keyframes anime {
+    0% {
+        margin-left: 120%;
+    }
+
+    100% {
+        margin-left: 40rem;
+    }
+}
+
+nav.navigation li {
+    color: white;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+nav.navigation li:hover {
+    color: green;
+}
+
+.social-media {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.social-media:hover {
+    color: green;
+}
+
+.MENU {
+    position: absolute;
+    bottom: -2rem;
+    margin: 0 0 0 2rem;
+}
+
+.MENUMENU {
+    font-size: 10rem;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+video {
+    padding: 0;
+    margin: 0;
+}
+
+section.second-page {
+    position: relative;
+    height: 50vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+        url(../image/Quasadillas.jpg) center no-repeat;
+    background-size: cover;
+    padding-bottom: 15rem;
+    overflow-y: hidden;
+}
+
+header.header {
+    width: 100%;
+}
+
+.service-item {
+    height: fit-content;
+    display: inline;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+header.service {
+    text-align: right;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+}
+
+div#logo {
+    position: absolute;
+    top: 0.5rem;
+    display: inline;
+    z-index: 1;
+}
+
+.banner {
+    color: #ddd;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-heading {
+    font-family: 'Bangers', cursive;
+    font-size: 8rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    animation: anim 2s;
+}
+
+.banner-paragraph {
+    font-size: 5rem;
+    font-weight: bold;
+    animation: anim 1.5s 0.5s backwards;
+}
+
+.banner-button {
+    width: 22rem;
+    padding: 1.2rem 2rem;
+    font-size: 2rem;
+    color: #333;
+    letter-spacing: 0.1rem;
+    border: none;
+    border-radius: 10rem;
+    outline: none;
+    background: linear-gradient(to right, rgb(121, 238, 121), rgb(20, 201, 20));
+    cursor: pointer;
+    animation: anim 1s 1s backwards;
+}
+
+.banner-button:hover {
+    background: linear-gradient(to left, rgb(121, 238, 121), rgb(20, 201, 20));
+}
+
+.banner-button:active {
+    transform: translateY(0.2rem);
+}
+
+@keyframes anim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.third-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    background: url('../image/back1.png');
+}
+
+.food {
+    margin: 1rem;
+    padding: 1rem;
+    width: 35rem;
+}
+
+.food-heading {
+    font-size: 2.8rem;
+    letter-spacing: 0.3rem;
+    color: green;
+    cursor: pointer;
+}
+.line {
+    width: 1rem;
+    height: 1rem;
+    background-color: #66cd00;
+    transition: all 0.3s;
+}
+
+.food-heading:hover {
+    color: #66cd00;
+    /* padding: 0.5rem;
+    margin: 0.5rem; */
+}
+
+.food:hover .line {
+    width: 8.5rem;
+    height: 1rem;
+    background-color: #66cd00;
+    /* padding: 0.5rem;
+    margin: 0.5rem; */
+}
+
+.food-paragraph {
+    color: rgb(219, 217, 217);
+    letter-spacing: 0.4rem;
+    line-height: 3.5rem;
+    margin-bottom: 0;
+}
+
+footer {
+    margin: 0;
+    padding: 3rem 1.6rem;
+    background-color: black;
+}
+.copyright-text p {
+    font-family: 'Bangers', cursive;
+    font-size: 1.6rem;
+    color: white;
+    margin: 0;
+    padding: 1.6rem;
+}
+
+/* media query*/
+
+@media only screen and (max-width: 50rem) {
+    div#logo {
+        display: none;
+    }
+    nav.navigation {
+        margin: 0;
+    }
+}
